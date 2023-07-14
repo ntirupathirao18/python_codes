@@ -90,3 +90,31 @@ def create_tfrecors(org_path ) :
 
             example = create_example(tensor_image,tensor_mask, indpath,addtional_values)
             writer.write(example.SerializeToString())
+
+
+import numpy as np
+
+def calculate_iou(boxes1, boxes2):
+    # Calculate coordinates of intersection rectangle
+    x1 = np.maximum(boxes1[:, 0], boxes2[:, 0])
+    y1 = np.maximum(boxes1[:, 1], boxes2[:, 1])
+    x2 = np.minimum(boxes1[:, 2], boxes2[:, 2])
+    y2 = np.minimum(boxes1[:, 3], boxes2[:, 3])
+
+    # Calculate area of intersection rectangle
+    intersection_area = np.maximum(0, x2 - x1 + 1) * np.maximum(0, y2 - y1 + 1)
+
+    # Calculate areas of the bounding boxes
+    box1_area = (boxes1[:, 2] - boxes1[:, 0] + 1) * (boxes1[:, 3] - boxes1[:, 1] + 1)
+    box2_area = (boxes2[:, 2] - boxes2[:, 0] + 1) * (boxes2[:, 3] - boxes2[:, 1] + 1)
+
+    # Calculate IoU
+    iou = intersection_area / (box1_area + box2_area - intersection_area)
+    return iou
+
+def calculate_iou_between_lists(pred_boxes, gt_boxes):
+    pred_boxes = np.array(pred_boxes)
+    gt_boxes = np.array(gt_boxes)
+
+    iou_scores = calculate_iou(pred_boxes, gt_boxes)
+    return iou_scores
