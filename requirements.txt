@@ -8,3 +8,5 @@ pandas
 monai
 tqdm
 torchmetrics
+
+https://colab.research.google.com/drive/10wcUr4kTHB8mZov3RlffIXjAXvKEY_US#scrollTo=Io9SVpbIgiS3
