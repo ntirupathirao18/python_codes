@@ -10,3 +10,4 @@ tqdm
 torchmetrics
 
 https://colab.research.google.com/drive/10wcUr4kTHB8mZov3RlffIXjAXvKEY_US#scrollTo=Io9SVpbIgiS3
+https://drive.google.com/file/d/1LZzCxNw8Gl5Up27Up2svThmrmDQRK7d9/view?usp=sharing
