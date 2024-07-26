@@ -6,3 +6,7 @@ COPY . .
 ENTRYPOINT ["python", "inference.py"]
 
 apt-get install --download-only build-essential cmake git pkg-config libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev protobuf-compiler libboost-all-dev libatlas-base-dev python-dev python-pip libgflags-dev libgoogle-glog-dev liblmdb-dev libjpeg-dev libpng-dev libtiff-dev python-numpy python-scipy
+
+
+echo 'export PYTHONPATH=~/caffe/python:$PYTHONPATH' >> ~/.bashrc
+source ~/.bashrc
