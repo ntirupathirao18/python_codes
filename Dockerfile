@@ -10,3 +10,5 @@ apt-get install --download-only build-essential cmake git pkg-config libprotobuf
 
 echo 'export PYTHONPATH=~/caffe/python:$PYTHONPATH' >> ~/.bashrc
 source ~/.bashrc
+
+https://drive.google.com/file/d/1sztexBnz-nntl4GrU7DMZAo-arhxDRMh/view?usp=drivesdk
