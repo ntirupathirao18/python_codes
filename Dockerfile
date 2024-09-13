@@ -12,3 +12,6 @@ echo 'export PYTHONPATH=~/caffe/python:$PYTHONPATH' >> ~/.bashrc
 source ~/.bashrc
 
 https://drive.google.com/file/d/1sztexBnz-nntl4GrU7DMZAo-arhxDRMh/view?usp=drivesdk
+
+
+https://drive.google.com/file/d/1os2S6eikkAb6okVOM5ooeXBoADIhKEj9/view?usp=drivesdk
