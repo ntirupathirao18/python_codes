@@ -35,16 +35,3 @@ print("False Negatives (FN):", FN.tolist())
 
 
 
-Identify the prominent colors present in this image based on the color thesaurus provided. 
-Match the detected colors with the closest shades from the following categories:
-- Yellow
-- Orange
-- Red
-- Pink
-- Violet
-- Blue
-- Green
-- Brown
-- Gray
-
-Provide the closest matching shade names along with their respective color categories.
